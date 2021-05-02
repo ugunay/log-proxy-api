@@ -16,7 +16,7 @@ git clone https://github.com/ugunay/log-proxy-api.git
 
 ## Running
 
-### Run with Dotnet CLI
+### Run with Visual Studio
 
 1. Run API project
 
