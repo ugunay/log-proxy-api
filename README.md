@@ -25,6 +25,7 @@ git clone https://github.com/ugunay/log-proxy-api.git
 3. Provide basic authentication with:
 
    username: test
+   
    password: test
 
 ### Run on Docker
