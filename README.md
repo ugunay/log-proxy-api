@@ -35,7 +35,7 @@ docker build -t logproxytest:latest -f FULL_PATH_TO_THE_DOCKER_FILE .
 
 docker run -p 8080:80 logproxytest:latest
 
-Try with postman : http://localhost:8080/message
+Try with Postman : http://localhost:8080/message
 ```
 
 ## Built With
