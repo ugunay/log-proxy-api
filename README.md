@@ -12,7 +12,7 @@ git clone https://github.com/ugunay/log-proxy-api.git
 
 ### Building
 
-1. Update appsettings.json Airtable->ApplicationId and Airtable->APIKey if you do want to work with your Airtable credentials.
+1. Update appsettings.json Airtable->ApplicationId and Airtable->APIKey if you want to work with your Airtable credentials.
 
 ## Running
 
