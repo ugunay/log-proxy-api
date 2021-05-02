@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogProxy.API", "LogProxy.API\LogProxy.API.csproj", "{E00292DB-39A2-4C07-B379-A629C4D44717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogProxy.API.UnitTests", "LogProxy.API.UnitTests\LogProxy.API.UnitTests.csproj", "{495C55CD-FB79-4015-9E65-F25FD35EAE80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E00292DB-39A2-4C07-B379-A629C4D44717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00292DB-39A2-4C07-B379-A629C4D44717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E00292DB-39A2-4C07-B379-A629C4D44717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E00292DB-39A2-4C07-B379-A629C4D44717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495C55CD-FB79-4015-9E65-F25FD35EAE80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495C55CD-FB79-4015-9E65-F25FD35EAE80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495C55CD-FB79-4015-9E65-F25FD35EAE80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495C55CD-FB79-4015-9E65-F25FD35EAE80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE7A2304-F66C-4394-98F0-79267335F42A}
+	EndGlobalSection
+EndGlobal
