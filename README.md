@@ -2,80 +2,44 @@
 
 A simple Log Proxy API, which receives log messages and forwards them to Airtable.
 
-
 ## Getting Started
 
-First of all, you need to clone the project to your local machine
+Clone the project to your local machine
 
 ```
-git clone https://github.com/peacecwz/trendyol-case-study.git
-cd trendyol-case-study
+git clone https://github.com/ugunay/log-proxy-api.git
 ```
 
 ### Building
 
-A step by step series of building that project
-
-1. Restore the project :hammer:
-
-```
-dotnet restore
-```
-
-2. Update appsettings.json or appsettings.Development.json (Which you are working stage)
-
-2. Change all connections for your development or production stage
-
-3. If you want to use different Database Provider (MS SQL, MySQL etc...) You can change on Data layer File: DIExtensions.cs (Line: 58)
-
-```
-    //For Microsoft SQL Server
-    services.AddDbContext<BestProductsDbContext>(options => options.UseSqlServer(connectionString, opt => opt.MigrationsAssembly("BestProductsApp.Data")));
-```
-
+1. Update appsettings.json Airtable->ApplicationId and Airtable->APIKey if you do want to work with your Airtable credentials.
 
 ## Running
 
 ### Run with Dotnet CLI
 
-1. Run API project :bomb:
+1. Run API project
+
+2. You can use Swagger UI or Postman to test the API.
+
+3. Provide basic authentication with:
+   username: test
+   password: test
+
+### Run on Docker
 
 ```
-dotnet run -p ./BestProductsApp.API/BestProductsApp.API.csproj
-```
+cmd
 
-2. Run Webjob project :boom:
+docker build -t logproxytest:latest -f FULL_PATH_TO_THE_DOCKER_FILE .
 
-```
-dotnet run -p ./BestProductsApp.Function/BestProductsApp.Function.csproj
-```
+docker run -p 8080:80 logproxytest:latest
 
-3. Run MVC project :bomb:
-
-```
-dotnet run -p ./BestProductsApp.MVC/BestProductsApp.MVC.csproj
-```
-
-### Run on Docker (only for API Project)
-
-Run docker compose commands in API Project :boom:
-
-```bash
-docker-compose build
-docker-compose run
+Try with postman : http://localhost:8080/message
 ```
 
 ## Built With
 
-* [.NET Core 2.0](https://www.microsoft.com/net/) 
-* [Entitiy Framework Core](https://docs.microsoft.com/en-us/ef/core/) - .NET ORM Tool
-* [NpgSQL for EF Core](http://www.npgsql.org/efcore/) - PostgreSQL extension for EF 
-* [Swagger](https://swagger.io/) - API developer tools for testing and documention
-* [Azure Storage](https://azure.microsoft.com/en-us/services/storage/)
-* [Azure Webjobs](https://github.com/Azure/azure-webjobs-sdk/wiki)
-* [Redis Cache](https://github.com/StackExchange/StackExchange.Redis)
-
-## Contributing
-
-* If you want to contribute to codes, create pull request
-* If you find any bugs or error, create an issue
+- [.NET Core 3.1](https://dotnet.microsoft.com/)
+- [AirtableApiClient](https://github.com/ngocnicholas/airtable.net)
+- [Swagger](https://swagger.io/) - API developer tools for testing and documention
