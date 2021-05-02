@@ -1,4 +1,4 @@
-# Test task for HeidelbergCement
+# Test task
 
 A simple Log Proxy API, which receives log messages and forwards them to Airtable.
 
