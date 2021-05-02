@@ -20,7 +20,7 @@ git clone https://github.com/ugunay/log-proxy-api.git
 
 1. Run API project
 
-2. You can use Swagger UI or Postman to test the API.
+2. You can use Swagger UI already opened with the browser or Postman to test the API.
 
 3. Provide basic authentication with:
    username: test
