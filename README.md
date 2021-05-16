@@ -44,4 +44,3 @@ Try with Postman : http://localhost:8080/message
 
 - [.NET Core 3.1](https://dotnet.microsoft.com/)
 - [AirtableApiClient](https://github.com/ngocnicholas/airtable.net)
-- [Swagger](https://swagger.io/)
